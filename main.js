@@ -15,8 +15,12 @@ const displayDate = () => {
  
 
 // Write a JavaScript program to convert a number to a string.
+let firstnum = 25;
+let string = firstnum.toString();
 
 
+console.log ("first Num")
+console.log("string")
 
 // Write a JavaScript program to convert a string to the number.
 

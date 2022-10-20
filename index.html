@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src="main.js"></script>
+    
   </head>
   <body>
     <h1>Hello World!</h1>
@@ -11,5 +11,19 @@
     <div id="display-element"></div>
     <button onclick="displayDate()">Click Me</button>
     <hr/>
+    <form class="add">
+      <label for="first-number">First Number:</label>
+      <!-- the "onkeyup" event listener passes its input's "value" to the "saveFirstNumber" function in the main.js file -->
+      <input  id="first-Number" name="first-Number" placeholder="type the first number" value="" onkeyup="saveFirstNumber(this.value)">
+      <label for="second-number">Second Number:</label>
+      <input  id="second-Number" name="second-Number" placeholder="type the second number" value="" onkeyup="saveSecondNumber(this.value)">
+      <div>
+    <!-- <div class="add">
+      <input id="firstnum" type="number" placeholder="number">
+      <input id="secondnum" type="number" placeholder="number">
+      <button>Add</button>
+    </div> -->
+
   </body>
+  <script src="main.js"></script>
 </html>
