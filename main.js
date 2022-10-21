@@ -15,15 +15,19 @@ const displayDate = () => {
  
 
 // Write a JavaScript program to convert a number to a string.
-let firstnum = 25;
+let firstnum = 40;
 let string = firstnum.toString();
 
 
-console.log ("first Num")
-console.log("string")
-
+console.log(firstnum)
+// console.log(string)
+const numtostring = (num) => {
+  return num.toString();
+} 
 // Write a JavaScript program to convert a string to the number.
-
+const stringtonum = (str) => {
+  return parseInt(str);
+}
 
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
