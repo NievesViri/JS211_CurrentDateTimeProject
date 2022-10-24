@@ -16,7 +16,10 @@
       <!-- the "onkeyup" event listener passes its input's "value" to the "saveFirstNumber" function in the main.js file -->
       <input  id="first-Number" name="first-Number" placeholder="type the first number" value="" onkeyup="saveFirstNumber(this.value)">
       <label for="second-number">Second Number:</label>
+   
       <input  id="second-Number" name="second-Number" placeholder="type the second number" value="" onkeyup="saveSecondNumber(this.value)">
+      <button onclick="add">Add</button>
+      <button onclick="displayResult()">Equals</button>
       <div>
     <!-- <div class="add">
       <input id="firstnum" type="number" placeholder="number">
