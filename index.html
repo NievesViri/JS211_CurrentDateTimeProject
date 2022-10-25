@@ -18,15 +18,20 @@
       <label for="second-number">Second Number:</label>
    
       <input  id="second-Number" name="second-Number" placeholder="type the second number" value="" onkeyup="saveSecondNumber(this.value)">
-      <button onclick="add">Add</button>
-      <button onclick="displayResult()">Equals</button>
+      <button type="button" name="add" id="addition" onclick="changeOperation(this.id)">Add</button>
+      
       <div>
     <!-- <div class="add">
       <input id="firstnum" type="number" placeholder="number">
       <input id="secondnum" type="number" placeholder="number">
       <button>Add</button>
     </div> -->
+    <br>
+    <button type="button" id="equal" onclick="equals()">Equals</button>
+    <button type="reset" id="clear" onclick="reset()">Clear</button>
 
+<div id="result"></div>
+  </form>
   </body>
   <script src="main.js"></script>
 </html>

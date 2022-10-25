@@ -15,7 +15,9 @@ const displayDate = () => {
  
 
 // Write a JavaScript program to convert a number to a string.
-let firstnum = 40;
+let firstnum = null
+let secondnum = null
+let operation = null
 let string = firstnum.toString();
 
 
@@ -41,11 +43,27 @@ const stringtonum = (str) => {
 
   
 // Write a JavaScript program that adds 2 numbers together.
-
-
-
+const add = (numA, numB) => {
+  const sum = numA + numB
+  return sum
+}
+function changeOperation(chosenOperation){
+  operation = chosenOperation
+}
+const equals = () => {
+  switch (operation) {
+    case "addition": putResultInElement(add(firstnum, secondnum))
+    }
+}
+const putResultInElement = (operationResults) => {
+  document.getElementById("result").innerHTML = "Results: " + operationResults
+}
 // Write a JavaScript program that runs only when 2 things are true.
-
+ function twoTrue (firstnum, secondnum) {
+  if(firstnum === secondnum && thirdnum > secondnum) {
+    return true;
+  }
+ }
 
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
